@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Club Form</title>
+<link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+
+<img src="img/horror-books.jpg">
+
+<form>
+
+	<div>
+	<!-- All inputs must have labels
+	The label is associated with the input using the for attribute.
+	The for attribute must match the ID of the input tag. -->
+	<label for="name">Name
+	</label>
+		<input type="text" id="name" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="email">E-mail address</label>
+		<input type="email" id="email" class="input-text" value="you@example.com" required>
+	</div>
+	
+	<div>
+		<label for="phone">Phone</label>
+		<input type="tel" id="phone">
+	</div>
+	
+	<div>
+		<label for="address">Address</label>
+		<input type="address" id="address" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="city">City</label>
+		<input type="city" id="city" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="province">Select Province</label>
+		<select id="province">
+			<option>Alberta</option>
+			<option>British Columbia</option>
+			<option>Manitoba</option>
+			<option>New Brunswick</option>
+			<option>Newfoundland and Labrador</option>
+			<option>Nova Scotia</option>
+			<option>Ontario</option>
+			<option>Prince Edward Island</option>
+			<option>Quebec</option>
+			<option>Saskatchewan</option>
+			<option>British Columbia</option>
+			<option>Northwest Territories</option>
+			<option>Nunavut</option>
+			<option>Yukon</option>
+		</select>
+	</div>
+	
+	<div>
+		<label for="city">Postal Code</label>
+		<input type="postalcode" id="postalcode" class="input-text" required>
+	</div>	
+
+	<div>
+		<label for="time">Time</label>
+		<input type="time" id="time">
+	<!-- type="time"
+	type="datetime-local"-->	
+		
+	</div>
+	
+	<div>
+		<label for="booksread">Number of Books Read</label>
+		<input type="number" id="booksread" pattern="[0-9]* min="1" max="130""optional>
+	</div>
+	
+	<div>
+		<label for="favbook">Describe your favourite book & Author</label>
+		<textarea id="favbook" class="textarea"></textarea>
+	</div>
+	
+	<fieldset>
+		<legend>How much do you love this genre?</legend>
+		
+		<input type="radio" id="love">
+		<label for="love">LOVE IT!</label>
+		
+		<input type="radio" id="like">
+		<label for="like">Like it</label>
+		
+		<input type="radio" id="neutral">
+		<label for="neutral">Neutral</label>
+		
+		<input type="radio" id="alright">
+		<label for="alright">It's alright.</label>
+		
+		<input type="radio" id="nope">
+		<label for="nope">Nope. Don't like it.</label>
+		
+	</fieldset>
+	</div>
+	
+	<div class="button-space">
+	<button type="submit">Submit</button>
+	
+			
+	</div>
+	
+	
+</form>
+
+</body>
+</html>
